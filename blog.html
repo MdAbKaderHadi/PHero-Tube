@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
+
+        * {
+            font-family: 'Work Sans', sans-serif;
+
+        }
+    </style>
+</head>
+<body class="px-16">
+    <header class="text-white py-4 text-center flex items-center justify-center gap-2 mt-6">
+        <img src="./Images/Logo.png" alt="">
+        <h1 class="text-4xl font-semibold text-black">Blog</h1>
+    </header>
+    <hr class="my-8">
+    <div class="container mx-auto p-4">
+        <div class="bg-white p-4 rounded shadow-lg my-4">
+            <h2 class="text-xl font-semibold mb-2">Scope of var, let, and const</h2>
+            <p class="text-gray-700">
+                The scope of variables in JavaScript refers to where in your code a particular variable can be accessed. Var, let, and const have different scopes:
+                <ul class="list-disc list-inside">
+                    <li class="mb-2"><strong>Var:</strong> Variables declared with var are function-scoped. This means they are only accessible within the function where they are declared. If declared outside of any function, they have global scope.</li>
+                    <li class="mb-2"><strong>Let:</strong> Variables declared with let are block-scoped. They are limited to the block or statement where they are defined. This can be within a function, loop, or conditional block.</li>
+                    <li class="mb-2"><strong>Const:</strong> Like let, const is also block-scoped. However, const variables cannot be reassigned after declaration. They are used for values that should remain constant throughout the block scope.</li>
+                </ul>
+                Understanding variable scope is important to prevent unintended side effects and scope-related issues in your JavaScript code.
+            </p>
+        </div>
+        <div class="bg-white p-4 rounded shadow-lg my-4">
+            <h2 class="text-xl font-semibold mb-2">Use Cases of null and undefined</h2>
+            <p class="text-gray-700">
+                <strong>Null:</strong> Null is typically used to indicate intentional absence of any object value or absence of a value in a variable. For example, you might set a variable to null to represent that it doesn't have a meaningful value yet, or you can use it to clear the value of an object. Null is a value that you assign to a variable or property when you want to explicitly indicate that it should be empty or have no value.
+            </p>
+            <p class="text-gray-700">
+                <strong>Undefined:</strong> Undefined, on the other hand, typically means that a variable has been declared but hasn't been assigned any value yet. It is the default value of variables that haven't been initialized. For example, if you declare a variable without assigning a value, it will be undefined. Additionally, undefined is also the default value for function parameters that are not provided when a function is called. In other words, it indicates a lack of value or an absence of assignment.
+            </p>
+        </div>
+        <div class="bg-white p-4 rounded shadow-lg my-4">
+            <h2 class="text-xl font-semibold mb-2">REST API</h2>
+            <p class="text-gray-700">
+                <strong>REST API (Representational State Transfer Application Programming Interface):</strong> REST is an architectural style for designing networked applications. A RESTful API, also known as a REST API, adheres to the principles of REST. It emphasizes simplicity, scalability, and statelessness. Here's a more detailed explanation:
+            </p>
+            <ul class="list-disc list-inside">
+                <li class="mb-2">REST APIs use standard HTTP methods, such as GET, POST, PUT, and DELETE, to perform operations on resources (typically represented by URLs or URIs).</li>
+                <li class="mb-2">Resources in a REST API are identified by unique URIs (Uniform Resource Identifiers), making it easy to access and manipulate them.</li>
+                <li class="mb-2">REST APIs are stateless, meaning each request from a client to a server must contain all the information needed to understand and process the request. The server doesn't store information about the client's state between requests.</li>
+                <li class="mb-2">REST APIs support a variety of data formats for representing resources, such as JSON and XML.</li>
+                <li class="mb-2">They promote a client-server architecture, where clients (e.g., web browsers, mobile apps) communicate with servers to request and manipulate resources.</li>
+                <li class="mb-2">REST APIs are widely used for web services and are a popular choice for building APIs for the web and mobile applications due to their simplicity and scalability.</li>
+            </ul>
+            <p class="text-gray-700">
+                REST APIs play a crucial role in enabling communication between different software systems over the internet and are a fundamental part of modern web development.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
